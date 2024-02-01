@@ -6,10 +6,11 @@ require('dotenv').config();
 const PORT = 5000;
 require('./db');
 
-
-
-
-
+app.get('/',(req,res)=>{
+    res.json({
+        message: "Store index.js get Api is working"
+    })
+})
 
 
 
